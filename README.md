@@ -62,7 +62,7 @@ A partir da intenção identificada, o fluxo de atendimento direciona a solicita
 
 ## 🧪 Como testar
 
-1. Acesse o [Aurora Financeira](COLOQUE_AQUI_O_LINK_DO_SITE).
+1. Acesse o [Aurora Financeira]( https://dayanepereiracosta.github.io/site-demo-modopiloto/).
 2. Clique no ícone de chat no canto inferior direito.
 3. Inicie uma conversa.
 4. Escreva sua solicitação em linguagem natural.
