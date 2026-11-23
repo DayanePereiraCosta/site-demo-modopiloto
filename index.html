@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora Financeira | Demonstração de atendimento por chat</title>
+<meta name="description" content="Página de demonstração fictícia de atendimento por chat com Amazon Connect.">
+<style>
+  :root{--navy:#14284b;--teal:#0f9d8a;--teal-dark:#0b7a6b;--bg:#f5f8fb;--ink:#1d2733;--muted:#5d6b7a;--card:#ffffff;--line:#dfe6ee}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+  header{background:var(--navy);color:#fff}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{font-weight:700;font-size:20px;letter-spacing:.3px}
+  .logo span{color:#5fe0cc}
+  nav a{color:#cfe0f5;text-decoration:none;margin-left:22px;font-size:15px}
+  nav a:hover{color:#fff}
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,#1f4a7a 100%);color:#fff;padding:72px 0 80px}
+  .hero h1{font-size:40px;line-height:1.15;margin:0 0 14px;max-width:640px}
+  .hero p{font-size:19px;color:#d6e4f5;max-width:600px;margin:0 0 28px}
+  .btn{display:inline-block;background:var(--teal);color:#fff;text-decoration:none;font-weight:600;padding:13px 26px;border-radius:10px}
+  .btn:hover{background:var(--teal-dark)}
+  .badge{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 14px;font-size:13px;margin-bottom:18px}
+  section{padding:56px 0}
+  h2{font-size:28px;color:var(--navy);margin:0 0 8px}
+  .lead{color:var(--muted);margin:0 0 30px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+  .card h3{margin:10px 0 6px;color:var(--navy);font-size:19px}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .icon{width:44px;height:44px;border-radius:12px;background:#e3f6f3;color:var(--teal-dark);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+  .steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 22px 22px 70px;position:relative;color:var(--muted);font-size:15px}
+  .steps li::before{content:counter(s);position:absolute;left:20px;top:20px;width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .steps b{display:block;color:var(--navy);font-size:16px;margin-bottom:2px}
+  .demo{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .note{background:#fff8e1;border:1px solid #f1d98a;border-radius:12px;padding:14px 18px;font-size:14px;color:#6b5600;margin-top:24px}
+  footer{background:var(--navy);color:#a9bad0;padding:30px 0;font-size:13px}
+  footer strong{color:#fff}
+  @media(max-width:640px){.hero h1{font-size:30px}nav{display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Aurora<span>Financeira</span></div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#demo">Demonstração</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="badge">Demonstração fictícia</div>
+    <h1>Atendimento financeiro por chat, sem filas e sem telefone</h1>
+    <p>Consulte seu extrato, peça o boleto por e-mail ou fale com um atendente, direto aqui no site.</p>
+    <a class="btn" href="#demo">Como testar o chat</a>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <h2>O que você resolve pelo chat</h2>
+    <p class="lead">O mesmo atendimento da nossa central telefônica, agora em uma conversa.</p>
+    <div class="grid">
+      <div class="card"><div class="icon">1</div><h3>Segunda via do boleto</h3><p>Receba o boleto em PDF no seu e-mail cadastrado, em poucos segundos.</p></div>
+      <div class="card"><div class="icon">2</div><h3>Extrato do contrato</h3><p>Veja saldo, parcelas e vencimentos do seu financiamento.</p></div>
+      <div class="card"><div class="icon">3</div><h3>Falar com atendente</h3><p>Se preferir, um atendente humano continua a conversa com você.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" class="demo">
+  <div class="wrap">
+    <h2>Como funciona</h2>
+    <p class="lead">Quatro passos simples, do primeiro clique ao atendimento.</p>
+    <ol class="steps">
+      <li><b>Abra o chat</b>Clique no botão no canto da tela.</li>
+      <li><b>Informe o CPF</b>Reconhecemos você pelo cadastro e chamamos pelo nome.</li>
+      <li><b>Escolha o serviço</b>Boleto, extrato ou atendente, com botões.</li>
+      <li><b>Avalie</b>No final, uma nota de 1 a 5 para o atendimento.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="demo">
+  <div class="wrap">
+    <h2>Teste a demonstração</h2>
+    <p class="lead">Clique no botão de chat no canto inferior direito da tela para começar.</p>
+    <div class="note"><strong>Atenção:</strong> esta é uma página de demonstração. A empresa, os clientes e todos os dados são fictícios. Não digite informações pessoais reais.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>Aurora Financeira</strong> é um nome fictício, usado apenas para demonstração de uma solução de atendimento em nuvem (Amazon Connect, AWS Lambda, Supabase e Amazon SES).
+  </div>
+</footer>
+
+<!-- ============================================================
+     CHAT DO AMAZON CONNECT
+     Cole logo abaixo o trecho (snippet) gerado no Connect em:
+     Channels > Communications widgets > (seu widget) > Embed.
+     Mantenha ele antes do </body>.
+     ============================================================ -->
+
+<!-- COLE_O_SNIPPET_AQUI -->
+
+</body>
+</html>
