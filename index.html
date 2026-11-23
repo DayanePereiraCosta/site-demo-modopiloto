@@ -102,14 +102,19 @@
   </div>
 </footer>
 
-<!-- ============================================================
-     CHAT DO AMAZON CONNECT
-     Cole logo abaixo o trecho (snippet) gerado no Connect em:
-     Channels > Communications widgets > (seu widget) > Embed.
-     Mantenha ele antes do </body>.
-     ============================================================ -->
-
-<!-- COLE_O_SNIPPET_AQUI -->
+<script type="text/javascript">
+  (function(w, d, x, id){
+    s=d.createElement('script');
+    s.src='https://modopiloto.my.connect.aws/connectwidget/static/amazon-connect-chat-interface-client.js';
+    s.async=1;
+    s.id=id;
+    d.getElementsByTagName('head')[0].appendChild(s);
+    w[x] =  w[x] || function() { (w[x].ac = w[x].ac || []).push(arguments) };
+  })(window, document, 'amazon_connect', '1cd7907b-ca3d-4d53-852f-910212c59bf9');
+  amazon_connect('styles', { iconType: 'CHAT', openChat: { color: '#ffffff', backgroundColor: '#123456' }, closeChat: { color: '#ffffff', backgroundColor: '#123456'} });
+  amazon_connect('snippetId', 'QVFJREFIaDRobWZ4TDRrQys5SXJsU0RsT2NjaHpDOEQvN3ZqSEZkQWdhY1I3SUhoUXdHZlpRTnFPa212dUpEcXBiNnVyNWVNQUFBQWJqQnNCZ2txaGtpRzl3MEJCd2FnWHpCZEFnRUFNRmdHQ1NxR1NJYjNEUUVIQVRBZUJnbGdoa2dCWlFNRUFTNHdFUVFNOUZiVFQ1TXFLdUhZdVFSdkFnRVFnQ3VNaTVBSjJ4ZnRBS0dNR05nMTRzL0xrUU9uRGNUSFIwY1I5WGxzbk5VMUVmOVU4NHNOTjRsRitzckQ6OlZZR0NQblpMRVU5Tm5LRTYxT2cwMTFvTUVtK0hkaVAzOGNxMEpMMWlMWmZOSUJZb2ovNGRJL0RuVWloM085V3gyS2xVWkQ4dkM5R0RzdEI5V2FzVGIzQ2MvYUF1eGw2cHVRUW40aC91TThtL09UOGNvaWphUkZhN1I3WW03VjQ2aWlEWFk2TTBVMFNObHNiRFhIaHU0Vk51bU5lU0V3OD0=');
+  amazon_connect('supportedMessagingContentTypes', [ 'text/plain', 'text/markdown', 'application/vnd.amazonaws.connect.message.interactive', 'application/vnd.amazonaws.connect.message.interactive.response' ]);
+</script>
 
 </body>
 </html>
