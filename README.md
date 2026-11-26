@@ -81,9 +81,6 @@ Explorar a integração entre desenvolvimento web, Inteligência Artificial e co
 - Experiência do usuário (UX).
 
 ---
+## 👩‍💻 Autoria
 
-**Desenvolvido por [Dayane pereira Costa]**
-
-Projeto de estudos em Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento web, Inteligência Artificial e Cloud Computing.
-
-⭐ Se gostou do projeto, fique à vontade para explorar o repositório!
+Desenvolvido por **Dayane Pereira Costa**, estudante de Análise e Desenvolvimento de Sistemas, em projeto de demonstração da **Modo Piloto Consultoria de Tecnologia**.
